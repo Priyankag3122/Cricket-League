@@ -116,6 +116,8 @@ export default function App() {
           <div class="carousel-item active">
             <img class="d-block w-100" src="../../images/4.jpg" alt="First slide" />
             <div class="carousel-caption d-none d-md-block">
+              <strong class="text-danger font-italic" style={{ fontSize: "40px", fontFamily: "Times New Roman", backgroundColor: "black" }}>
+                Check all the latest news and updates of cricket, live cricket score, commentary and scorecard</strong>
             </div>
           </div>
           <div class="carousel-item">
@@ -140,12 +142,12 @@ export default function App() {
 
         {teamList.map((val, key) => {
           return <div className="team">
-<ul class="list-group">
-<li class="list-group-item">Country:{val.country}</li>
-<li class="list-group-item">Team:{val.team}</li>
-<li class="list-group-item">Player:{val.player}</li>
-<li class="list-group-item">Venue:{val.venue}</li>
-<li class="list-group-item">Matches:{val.matches}</li>
+            <ul class="list-group">
+              <li class="list-group-item">Country:{val.country}</li>
+              <li class="list-group-item">Team:{val.team}</li>
+              <li class="list-group-item">Player:{val.player}</li>
+              <li class="list-group-item">Venue:{val.venue}</li>
+              <li class="list-group-item">Matches:{val.matches}</li>
             </ul>
 
             <button class="btn btn-danger"
@@ -158,9 +160,9 @@ export default function App() {
           </div>
         })}
       </div>
-      <hr/>
+      <hr />
     </div>
-   
+
 
   )
 }
