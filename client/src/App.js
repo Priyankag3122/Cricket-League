@@ -43,15 +43,15 @@ export default function App() {
     });
   };
 
-  const deleteEmployee = (id) => {
-    Axios.delete(`http://localhost:3001/delete/${id}`).then((response) => {
-      setTeamList(
-        teamList.filter((val) => {
-          return val.id !== id;
-        })
-      );
-    });
-  };
+  // const deleteEmployee = (id) => {
+  //   Axios.delete(`http://localhost:3001/delete/${id}`).then((response) => {
+  //     setTeamList(
+  //       teamList.filter((val) => {
+  //         return val.id !== id;
+  //       })
+  //     );
+  //   });
+  // };
 
 
   return (
@@ -148,13 +148,13 @@ export default function App() {
             <h3>Matches:{val.matches}</h3>
 
 
-            <button class="btn btn-danger"
+            {/* <button class="btn btn-danger"
               onClick={() => {
                 deleteEmployee(val.id);
               }}
             >
               Delete
-                </button>
+                </button> */}
           </div>
         })}
       </div>
