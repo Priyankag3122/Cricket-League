@@ -38,10 +38,9 @@ button:hover{
   flex-direction: column;
 }
 .team{
-    width: auto;
     height: auto;
-    display: flex;
-  
+    padding: 10px;
+  margin:20px;
     font-family: 'Courier New', Courier, monospace;
   }
   
@@ -49,3 +48,7 @@ button:hover{
 .team h3 {
     margin: 20px;
   }
+.list-group-item{
+  border: 2px solid pink;
+  margin-left:20px
+}

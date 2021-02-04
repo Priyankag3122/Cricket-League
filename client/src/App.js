@@ -140,13 +140,13 @@ export default function App() {
 
         {teamList.map((val, key) => {
           return <div className="team">
-
-            <h3>Country:{val.country}</h3>
-            <h3>Team:{val.team}</h3>
-            <h3>Player:{val.player}</h3>
-            <h3>Venue:{val.venue}</h3>
-            <h3>Matches:{val.matches}</h3>
-
+<ul class="list-group">
+<li class="list-group-item">Country:{val.country}</li>
+<li class="list-group-item">Team:{val.team}</li>
+<li class="list-group-item">Player:{val.player}</li>
+<li class="list-group-item">Venue:{val.venue}</li>
+<li class="list-group-item">Matches:{val.matches}</li>
+            </ul>
 
             <button class="btn btn-danger"
               onClick={() => {
